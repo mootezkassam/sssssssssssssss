@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 13.0px 'Helvetica Neue'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;TikTok Pixel Test Page&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- TikTok Pixel Code --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>!function (w, d, t) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>w.TiktokAnalyticsObject = t;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>var ttq = w[t] = w[t] || [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ttq.setAndDefer = function (t, e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>t[e] = function () {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>t.push([e].concat(Array.prototype.slice.call(arguments, 0)))</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (var i = 0; i &lt; ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ttq.instance = function (t) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (var e = ttq._i[t] || [], n = 0; n &lt; ttq.methods.length; n++</p>
+<p class="p1"><span class="Apple-converted-space">                </span>)ttq.setAndDefer(e, ttq.methods[n]);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return e</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, ttq.load = function (e, n) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>var i = "https://analytics.tiktok.com/i18n/pixel/events.js";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>var o = document.createElement("script");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&amp;lib=" + t;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>var a = document.getElementsByTagName("script")[0];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>a.parentNode.insertBefore(o, a)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>ttq.load('<span class="s1">CV9IQBJC77UCFC44B9V0</span>'); // Replace with your actual TikTok Pixel ID</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ttq.page();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}(window, document, 'ttq');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;TikTok Pixel Test Page&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="completeRegistrationButton"&gt;Complete Registration&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('completeRegistrationButton').addEventListener('click', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Trigger the CompleteRegistration event with additional fake data</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ttq.track('CompleteRegistration', {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>email: "testuser@example.com",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>phone_number: "1234567890",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>first_name: "John",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>last_name: "Doe"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>address: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>city: "Testville",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>state: "TS",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>country: "US",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>zip: "12345"</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>registration_method: "Website"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert('Complete Registration event sent to TikTok Pixel with fake data!');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
